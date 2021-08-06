@@ -1,6 +1,6 @@
 Assalom alaykum bu proektimiz hali ishlovda
 
-LINK ==> olx-reactjs.netlify.app
+LINK ==> https://olx-reactjs.netlify.app/
 
 ko'rganingiz uchun rahmat :)
 
