@@ -1,3 +1,6 @@
+Assalom alaykum bu proektimiz hali ishlovda
+ko'rganingiz uchun rahmat :)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
