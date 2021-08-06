@@ -1,4 +1,7 @@
 Assalom alaykum bu proektimiz hali ishlovda
+
+LINK ==> olx-reactjs.netlify.app
+
 ko'rganingiz uchun rahmat :)
 
 # Getting Started with Create React App
