@@ -26,4 +26,8 @@
 .input{
   border: none;
   outline: none;
+  border-left: solid 1px ;
+}
+.button:hover{
+  color: rgb(0, 183, 255);
 }

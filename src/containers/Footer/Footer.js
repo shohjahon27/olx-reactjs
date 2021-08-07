@@ -54,16 +54,21 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-md-3">
-            <div className="">
-              <img
-                className="m-2"
-                src="https://static.olx.uz/static/olxuz/packed/font/2fc9f37e6707acfc0e1255cec57c49a986.svg"
-                alt=""
-              />
-              <img
-                src="https://static.olx.uz/static/olxuz/packed/font/2fccd2faa9395d5faed1011516c64dc929.svg"
-                alt=""
-              />
+            <div className="d-flex">
+              <a href="https://play.google.com/store/apps/details?id=com.torg.torg&hl=ru&referrer=utm_source%3Dolx.uz%26utm_medium%3Dcpc%26utm_campaign%3Dandroid-app-footer">
+                <img
+                  className="m-2"
+                  src="https://static.olx.uz/static/olxuz/packed/font/2fc9f37e6707acfc0e1255cec57c49a986.svg"
+                  alt=""
+                />
+              </a>
+
+              <a href="https://itunes.apple.com/uz/app/torg.uz/id665094472?mt=8&ign-mpt=uo%3D4">
+                <img
+                  src="https://static.olx.uz/static/olxuz/packed/font/2fccd2faa9395d5faed1011516c64dc929.svg"
+                  alt=""
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -71,5 +76,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

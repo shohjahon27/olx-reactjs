@@ -29,7 +29,7 @@ const Header = () => {
           </a>
         </div>
         <div className="d-flex align-items-center ">
-          <div className="me-0 ">
+          {/* <div className="me-0 ">
             {" "}
             <span className="fw-bold">
               <a href="">O'Z</a>
@@ -37,7 +37,7 @@ const Header = () => {
             <span className={` mb-2 ${theme}`}>
               <a href=""> | РУ</a>
             </span>
-          </div>
+          </div> */}
           <div className="po ms-4">
             {" "}
             <a href="">

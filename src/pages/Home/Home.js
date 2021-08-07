@@ -151,7 +151,7 @@ const Home = () => {
             name=""
             id=""
           />
-          <button className=" input bg-white  p-4 w-50" >
+          <button className=" input button bg-white  p-4 w-50" >
            Поиск <FontAwesomeIcon  className="ms-3" icon={faSearch} />
           </button>
         </div>
@@ -174,7 +174,7 @@ const Home = () => {
           <div className="container">
             {" "}
             <div className="row  p-0">
-              <h2 className="text-center ">Премиум объявления</h2>
+              <h2 className="text-center py-4">Премиум объявления</h2>
               {obj.map((v) => (
                 <div className="col-sm-12 col-md-6 col-lg-3">
                   <div className=" rounded mb-2 bg-white   size">
