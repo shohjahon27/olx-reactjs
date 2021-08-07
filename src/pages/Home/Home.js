@@ -1,5 +1,5 @@
-import "./Home.css"
-import React from 'react'
+import "./Home.css";
+import React, { Component } from "react";
 import Container from "../../containers/Container";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -80,7 +80,7 @@ const categories = [
     title: "Обмен",
     to: "Обмен",
   },
-];  
+];
 
 const obj = [
   {
@@ -140,20 +140,141 @@ const obj = [
   },
 ];
 
-const Home = () => {
+class Home extends Component {
+  constructor() {
+    super();
+    this.state = {
+      filter: "",
+
+      data: [
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/8n9et1e4ghga3-UZ/image;s=644x461",
+          title: "kvartira yashashga",
+          price: "narxi kelishilgan xolda",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/ac38wtcimppz-UZ/image;s=644x461",
+          title: "do'kon sotiladi",
+          price: "8000 usd",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/rzcteq71bswl2-UZ/image;s=644x461",
+          title: "ofis biznes uchun",
+          price: "380 у.е.",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/qd1rxgkv9gyu2-UZ/image;s=644x461",
+          title: "joystek kabelli",
+          price: "380 у.е.",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/boz9wwvyabdo-UZ/image;s=644x461",
+          title: "gazeta axborot",
+          price: "380 у.е.",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/wfx5cdefqrcy-UZ/image;s=644x461",
+          title: "playstation joystek",
+          price: "380 у.е.",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/hbsl1u5rfcxl-UZ/image;s=644x461",
+          title: "Avto GPS tracker Sinotrack ST-901",
+          price: "380 у.е.",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/2t86x9fm5mga-UZ/image;s=644x461",
+          title: "Turli hildagi shpoklovkalarimiz bor",
+          price: "390 у.е.",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/92ilsifqx3sz-UZ/image;s=644x461",
+          title: "nexia 3 avto kredit sovgasiga megikar pult Uzavtopremium",
+          price: "109 000 000 so’m",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/rj5bbmf6icjc-UZ/image;s=644x461",
+          title: "Ferre 21 eco madellari Turkey&Uzbekistan Toshkent",
+          price: "192 у.е.",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/qx3b12dfdpmr2-UZ/image;s=644x461",
+          title: "Kamaz samasuval allo toshkent buyicha",
+          price: "13 000 у.е.",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/p0gqz3wumaks-UZ/image;s=644x461",
+          title: "ventilyator",
+          price: "2 100 000 so’m",
+          location: "Ташкент, Шайхантахурский район 5 авг.",
+        },
+
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/yttij89p3jr33-UZ/image;s=644x461",
+          title: "smm kurslariga marhamat",
+          price: "1000 000 sum",
+          location: "chinoz  date/bugun",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/lwygbcaibc0r1-UZ/image;s=644x461",
+          title: "tekin advokat",
+          price: "100 000 sum",
+          location: "chinoz  date/kecha",
+        },
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/efkrb4xskwm61-UZ/image;s=644x461",
+          title: "Betonlik zinalar  sifatli va arzon ",
+          price: "100 000 sum",
+          location: "samarqand  date/2 kun oldin",
+        },
+
+        {
+          img: "https://apollo-olx.cdnvideo.ru/v1/files/3qp7ys1mwqfu2-UZ/image;s=644x461",
+          title: "kelin kuylak xolati alo ",
+          price: "1 000 000 so’m",
+          location: "samarqand  date/3 kun oldin",
+        },
+        {
+          img: "",
+          title: "",
+          price: "",
+          location: "",
+        },
+      ],
+    };
+  }
+  searchTxt(e) {
+    this.setState({ filter: e.target.value });
+  }
+  render() {
+    let { filter, data } = this.state;
+    let Dataseach = data.filter((item) => {
+      return Object.keys(item).some((key) =>
+        item[key].toLowerCase().includes(filter.toLowerCase())
+      );
+    });
     return (
       <Container className="bg-dark">
         <div className="container">
           <input
             type="text"
             placeholder="755 465 объявлений рядом"
-            className="input w-50 my-5 p-4"
+            className="input w-100 my-5 p-4"
+            onChange={this.searchTxt.bind(this)}
             name=""
             id=""
           />
-          <button className=" input button bg-white  p-4 w-50">
-            Поиск <FontAwesomeIcon className="ms-3" icon={faSearch} />
-          </button>
         </div>
 
         <div className="container-fluid bg-white py-4  ">
@@ -175,7 +296,7 @@ const Home = () => {
             {" "}
             <div className="row  p-0">
               <h2 className="text-center py-4">Премиум объявления</h2>
-              {obj.map((v) => (
+              {Dataseach.map((v) => (
                 <div className="col-sm-12 col-md-6 col-lg-3">
                   <div className=" rounded mb-2 bg-white   size">
                     <div className="p-3">
@@ -235,18 +356,14 @@ const Home = () => {
               />
             </div>
             <p className="fs-9 mt-2">
-             Детский мир, Недвижимость, Транспорт,
-              Работа, Животные, Дом и сад, Электроника, Бизнес и услуги, Мода и
-              стиль, Хобби, отдых и спорт, Отдам даром, Обмен
+              Детский мир, Недвижимость, Транспорт, Работа, Животные, Дом и сад,
+              Электроника, Бизнес и услуги, Мода и стиль, Хобби, отдых и спорт,
+              Отдам даром, Обмен
             </p>
           </div>
         </div>
       </Container>
     );
-  
-    
+  }
 }
-
 export default Home;
-
-
