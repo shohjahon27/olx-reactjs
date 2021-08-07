@@ -1,11 +1,14 @@
 footer a {
-  color: white;
+  color: rgb(41, 41, 41);
   font-weight: bold;
   display: block;
   text-decoration: none;
   padding: 4px 0px;
 }
-.emb {
+footer {
+  background-color: rgb(247, 247, 247) !important;
+}
+/* .emb {
   font-weight: 1000;
   font-size: 60px;
 }
@@ -26,4 +29,4 @@ footer a {
   margin: 0 3px;
   background: no-repeat 50% 50%;
   background-size: 100%;
-}
+} */

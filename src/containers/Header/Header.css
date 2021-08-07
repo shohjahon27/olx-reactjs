@@ -4,9 +4,23 @@
 }
 
 .dark {
-  background-color: rgb(23, 16, 65);
+  background-color: rgb(0, 0, 0);
 }
 
 .dark a {
   color: rgb(236, 234, 255) !important;
+}
+.logo{
+  width:100px !important;
+  /* box-shadow: 0 0 10px rgb(219, 216, 216); */
+}
+/* @media  (min-width:404px) {
+  .po a{
+    font-size:10px !important;
+  }
+} */
+@media  (max-width:600px) {
+  .po a{
+    font-size:10px !important;
+  }
 }
