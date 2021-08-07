@@ -16,25 +16,24 @@ const Category = () => {
     console.log(data);
 
     return (
-        <Container>
-            <div className="container">
-                <h1>Category: {category}</h1>
-                <div className="row">
-                    {data.map(v =>
-                        <div className="col-sm-6 col-md-3">
-                            <div className="product shadow rounded overflow-hidden p-2">
-                                <img src={v.img} className="w-100 mb-4" alt="" />
-                                <p>{v.title}</p>
-                                <span>{v.price}</span> <br />
-                                <span>{v.location}</span>
-                            </div>
-                        </div>)
-                    }
+      <Container>
+        <div className="container">
+          <h1>Category: {category}</h1>
+          <div className="row">
+            {data.map((v) => (
+              <div className="col-sm-6 col-md-3">
+                <div className="product shadow rounded overflow-hidden p-2">
+                  <img src={v.img} className="w-100 mb-4" alt="" />
+                  <p>{v.title}</p>
+                  <span>{v.price}</span> <br />
+                  <span>{v.location}</span>
                 </div>
-            </div>
-        </Container>
-
-    )
+              </div>
+            ))}
+          </div>
+        </div>
+      </Container>
+    );
 }
 
 export default Category;

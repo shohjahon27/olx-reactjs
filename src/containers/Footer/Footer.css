@@ -5,3 +5,25 @@ footer a {
   text-decoration: none;
   padding: 4px 0px;
 }
+.emb {
+  font-weight: 1000;
+  font-size: 60px;
+}
+.embl {
+  content: "";
+  width: 114px;
+  height: 129px;
+  display: block;
+  background: url(https://static.olx.uz/static/olxuz/packed/font/2fc1ef4e9c6a6dc640b6feb727836fabc7.svg)
+    no-repeat 50% 50%;
+  background-size: contain;
+  margin-bottom: 15px;
+}
+.playmarketbtn {
+  background-image: url(https://rusgamelife.ru/wp-content/uploads/2017/04/play-market.jpg);
+  width: 140px;
+  height: 48px;
+  margin: 0 3px;
+  background: no-repeat 50% 50%;
+  background-size: 100%;
+}
