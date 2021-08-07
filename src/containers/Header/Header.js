@@ -20,11 +20,13 @@ const Header = () => {
     <header className={` ${theme}`}>
       <div className="container d-flex justify-content-between align-items-center">
         <div>
-          <img
-            className=" logo "
-            src="https://o.remove.bg/downloads/3867a60c-3ac8-4bf4-8939-b6601a4adf06/fb-image_redesign-removebg-preview.png"
-            alt=""
-          />
+          <a href="/">
+            <img
+              className=" logo "
+              src="https://o.remove.bg/downloads/3867a60c-3ac8-4bf4-8939-b6601a4adf06/fb-image_redesign-removebg-preview.png"
+              alt=""
+            />
+          </a>
         </div>
         <div className="d-flex align-items-center ">
           <div className="me-0 ">
@@ -41,7 +43,7 @@ const Header = () => {
             <a href="">
               <FontAwesomeIcon className="me-4" icon={faHeart} />
             </a>
-            <a className="fw-bold" href="#">
+            <a className="fw-bold" href="/Мода">
               {" "}
               <FontAwesomeIcon className="me-2" icon={faUser} />
               Подать объявление

@@ -2,6 +2,8 @@ import "./Home.css"
 import React from 'react'
 import Container from "../../containers/Container";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 const categories = [
   {
@@ -152,25 +154,36 @@ const Home = () => {
           ))}
         </div>
         <div>
-          <div className="row  p-0">
-            <h2 className="text-center ">Премиум объявления</h2>
-            {obj.map((v) => (
-              <div className="col m-0 col-sm-12 col-md-4 col-lg-3">
-                <div className="card m-2 ">
-                  <img src={v.img} alt="yuklanmoqda yoki oxirgisi" />
-                  <p>{v.title}</p>
-                  <p>{v.price}</p>
-                  <p>{v.location}</p>
+          <div className="container">
+            {" "}
+            <div className="row  p-0">
+              <h2 className="text-center ">Премиум объявления</h2>
+              {obj.map((v) => (
+                <div className="col m-0 col-sm-12 col-md-6 col-lg-3">
+                  <div className="shadow raunded mb-2  size">
+                    <div className="p-2">
+                      {" "}
+                      <img
+                        className="w-100 h-100"
+                        src={v.img}
+                        alt="yuklanmoqda yoki oxirgisi"
+                      />
+                      <p className="fw-bold">{v.title}</p>
+                      <p className="fw-bold fst-normal">{v.price}</p>
+                      <div className="d-flex justify-content-between align-items-center">
+                        <p className="mb-0">{v.location}</p>
+                        <FontAwesomeIcon icon={faHeart }/>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-          
         </div>
 
         <div></div>
       </Container>
-      
     );
   
     
