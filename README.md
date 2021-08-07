@@ -1,3 +1,12 @@
+Assalom alaykum bu proektimiz hali ishlovda
+
+LINK ==> https://olx-reactjs.netlify.app/
+
+ko'rganingiz uchun rahmat :)
+
+![banner](https://bestarion.com/wp-content/uploads/2021/03/0_HICLyAdNSIyT0ODU.jpg)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
