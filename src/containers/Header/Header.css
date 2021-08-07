@@ -20,7 +20,7 @@
   }
 } */
 @media  (max-width:600px) {
-  .po a{
+  .po {
     font-size:10px !important;
   }
 }

@@ -19,5 +19,11 @@
   height: auto;
 }
 .h-100{
+  width: 100%;
   height: 250px !important;
+}
+
+.input{
+  border: none;
+  outline: none;
 }

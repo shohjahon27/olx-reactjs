@@ -4,6 +4,7 @@ import Container from "../../containers/Container";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const categories = [
   {
@@ -141,17 +142,33 @@ const obj = [
 
 const Home = () => {
     return (
-      <Container>
-        <div className="container py-4">
-          <h1 className="text-center py-4">Главные категории</h1>
-          {categories.map((v) => (
-            <Link to={v.to} key={v.to} className="category">
-              <div className="icon" style={{ backgroundColor: v.backColor }}>
-                <img src={v.icon} alt="" />
-              </div>
-              {v.title}
-            </Link>
-          ))}
+      <Container className="bg-dark">
+        <div className="container">
+          <input
+            type="text"
+            placeholder="755 465 объявлений рядом"
+            className="input w-50 my-5 p-4"
+            name=""
+            id=""
+          />
+          <button className=" input bg-white  p-4 w-50" >
+           Поиск <FontAwesomeIcon  className="ms-3" icon={faSearch} />
+          </button>
+        </div>
+
+        <div className="container-fluid bg-white py-4  ">
+          <div className="container ">
+            {" "}
+            <h1 className="text-center py-4">Главные категории</h1>
+            {categories.map((v) => (
+              <Link to={v.to} key={v.to} className="category">
+                <div className="icon" style={{ backgroundColor: v.backColor }}>
+                  <img src={v.icon} alt="" />
+                </div>
+                {v.title}
+              </Link>
+            ))}
+          </div>
         </div>
         <div>
           <div className="container">
@@ -159,9 +176,9 @@ const Home = () => {
             <div className="row  p-0">
               <h2 className="text-center ">Премиум объявления</h2>
               {obj.map((v) => (
-                <div className="col m-0 col-sm-12 col-md-6 col-lg-3">
-                  <div className="shadow raunded mb-2  size">
-                    <div className="p-2">
+                <div className="col-sm-12 col-md-6 col-lg-3">
+                  <div className=" rounded mb-2 bg-white   size">
+                    <div className="p-3">
                       {" "}
                       <img
                         className="w-100 h-100"
@@ -172,7 +189,7 @@ const Home = () => {
                       <p className="fw-bold fst-normal">{v.price}</p>
                       <div className="d-flex justify-content-between align-items-center">
                         <p className="mb-0">{v.location}</p>
-                        <FontAwesomeIcon icon={faHeart }/>
+                        <FontAwesomeIcon icon={faHeart} />
                       </div>
                     </div>
                   </div>
