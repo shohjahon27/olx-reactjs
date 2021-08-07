@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-md-3">
-            <div className="d-flex">
+            <div className="d-flex ">
               <a href="https://play.google.com/store/apps/details?id=com.torg.torg&hl=ru&referrer=utm_source%3Dolx.uz%26utm_medium%3Dcpc%26utm_campaign%3Dandroid-app-footer">
                 <img
                   className="m-2"

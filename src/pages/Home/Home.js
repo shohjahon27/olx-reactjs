@@ -151,8 +151,8 @@ const Home = () => {
             name=""
             id=""
           />
-          <button className=" input button bg-white  p-4 w-50" >
-           Поиск <FontAwesomeIcon  className="ms-3" icon={faSearch} />
+          <button className=" input button bg-white  p-4 w-50">
+            Поиск <FontAwesomeIcon className="ms-3" icon={faSearch} />
           </button>
         </div>
 
@@ -197,9 +197,50 @@ const Home = () => {
               ))}
             </div>
           </div>
-        </div>
 
-        <div></div>
+          <div className="footer-business-partner py-2">
+            <div className="footer-business-partner__wrapper">
+              <div className="footer-business-partner__slogan">
+                <img
+                  className="me-5"
+                  src="https://static.olx.uz/static/olxuz/packed/font/2fbd23c39bff0aee6c0c84aaf60e66347d.svg"
+                  alt=""
+                />
+                <strong>Начните бизнес в интернете с OLX!</strong>
+                <a href="#">
+                  <button className="btnn ms-5">Подробнее</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="container text-center pb-5">
+            <h1 className="mb-5 fw">O|X</h1>
+            Cервис объявлений № 1 в Узбекистане Частные объявления Узбекистана{" "}
+            <br />
+            на OLX (бывший torg.uz) - здесь вы найдете то, что искали. <br />{" "}
+            Нажав на кнопку "Подать объявление", вы сможете разместить
+            онлайн-объявление на любую необходимую тематику - <br />
+            поиск работы, услуги, продажа автомобилей, недвижимости, электроники
+            и многое другое. <br /> С помощью сервиса OLX в Узбекистане вы
+            можете найти, продать или купить практически все, что угодно. <br />
+            Воспользовавшись функцией поиска, вы без труда найдете уже
+            опубликованные объявления интересующей вас тематики. <br /> OLX в
+            Узбекистане - ваш надежный и незаменимый помощник.
+            <div className="row writeDowner">
+              {" "}
+              <img
+                src="	https://static.olx.uz/static/olxuz/packed/font/2fc1ef4e9c6a6dc640b6feb727836fabc7.svg"
+                alt=""
+              />
+            </div>
+            <p className="fs-9 mt-3">
+             Детский мир, Недвижимость, Транспорт,
+              Работа, Животные, Дом и сад, Электроника, Бизнес и услуги, Мода и
+              стиль, Хобби, отдых и спорт, Отдам даром, Обмен
+            </p>
+          </div>
+        </div>
       </Container>
     );
   
