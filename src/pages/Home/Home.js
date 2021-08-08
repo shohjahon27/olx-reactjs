@@ -132,12 +132,6 @@ const obj = [
     location: "Ташкент, Шайхантахурский район 5 авг.",
   },
 
-  {
-    img: "",
-    title: "",
-    price: "",
-    location: "",
-  },
 ];
 
 class Home extends Component {
@@ -244,12 +238,6 @@ class Home extends Component {
           title: "kelin kuylak xolati alo ",
           price: "1 000 000 so’m",
           location: "samarqand  date/3 kun oldin",
-        },
-        {
-          img: "",
-          title: "",
-          price: "",
-          location: "",
         },
       ],
     };
