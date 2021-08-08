@@ -47,12 +47,6 @@ const data = [
     price: "150 000 sum",
     location: "Ташкент, Чиланзарский район",
   },
-  {
-    img: "",
-    title: "",
-    price: "",
-    location: "",
-  },
 ];
 
 export default data;

@@ -47,12 +47,6 @@ const data = [
     price: "24.99 у.е.",
     location: "Ташкент, Чиланзарский район",
   },
-  {
-    img: "",
-    title: "",
-    price: "",
-    location: "",
-  },
 ];
 
 export default data;
