@@ -65,7 +65,7 @@ const categories = [
   {
     icon: "	https://categories.olxcdn.com/assets/categories/olxuz/hobbi-otdyh-i-sport-903-2x.png",
     backColor: "#ceddff ",
-    title: "Хобби и спорт",
+    title: "спорт",
     to: "Хобби",
   },
   {

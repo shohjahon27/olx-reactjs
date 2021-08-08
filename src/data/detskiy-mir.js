@@ -56,3 +56,16 @@ const data = [
 ];
 
 export default data;
+
+// return (
+//   <div className="container">
+//     <input
+//       type="text"
+//       placeholder="755 465 объявлений рядом"
+//       className="input w-100 my-5 p-4"
+//       onChange={this.searchTxt.bind(this)}
+//       name=""
+//       id=""
+//     />
+//   </div>
+// );
