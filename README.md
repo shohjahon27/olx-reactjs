@@ -1,4 +1,4 @@
-Assalom alaykum bu proektimiz hali ishlovda
+Assalom alaykum bu proekt hali ishlovda
 
 LINK ==> https://olx-reactjs.netlify.app/
 
