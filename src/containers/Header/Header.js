@@ -17,13 +17,13 @@ const Header = () => {
   console.log(theme, toggleTheme);
 
   return (
-    <header className={` ${theme}`}>
+    <header className={` ${theme}`} >
       <div className="container d-flex justify-content-between align-items-center">
         <div>
           <a href="/">
             <img
-              className=" logo "
-              src="https://o.remove.bg/downloads/3867a60c-3ac8-4bf4-8939-b6601a4adf06/fb-image_redesign-removebg-preview.png"
+              className="logo "
+              src="olxogo.jpg"
               alt=""
             />
           </a>
