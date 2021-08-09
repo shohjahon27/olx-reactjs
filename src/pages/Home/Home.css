@@ -19,7 +19,7 @@
   height: auto;
 }
 .h-100 {
-  width: 100%;
+  width: 80%;
   height: 250px !important;
 }
 
@@ -64,4 +64,10 @@
 }
 .rounded{
   cursor: pointer;
+}
+.swiper{
+ width: 150px !important;
+}
+.swiperjs{
+  width: 900px !important;
 }

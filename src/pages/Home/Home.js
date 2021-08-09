@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
 
 const categories = [
   {
@@ -80,6 +82,7 @@ const categories = [
     title: "Обмен",
     to: "Обмен",
   },
+  
 ];
 
 const obj = [
@@ -269,14 +272,29 @@ class Home extends Component {
           <div className="container ">
             {" "}
             <h1 className="text-center py-4">Главные категории</h1>
-            {categories.map((v) => (
-              <Link to={v.to} key={v.to} className="category">
-                <div className="icon" style={{ backgroundColor: v.backColor }}>
-                  <img src={v.icon} alt="" />
-                </div>
-                {v.title}
-              </Link>
-            ))}
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={3}
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              className="swiperjs"
+            >
+              {categories.map((v) => (
+                <SwiperSlide className="swiper">
+                  <Link to={v.to} key={v.to} className="category">
+                    <div
+                      className="icon"
+                      style={{ backgroundColor: v.backColor }}
+                    >
+                      <img src={v.icon} alt="" />
+                    </div>
+                    {v.title}
+                  </Link>
+                </SwiperSlide>
+              ))}
+      
+            </Swiper>
+        
           </div>
         </div>
         <div>
