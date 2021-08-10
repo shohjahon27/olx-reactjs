@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import ThemeContext from "./../../theme-context";
 import { Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faUser } from "@fortawesome/free-regular-svg-icons";
+import { faGrinHearts, faHeart, faKissWinkHeart, faUser } from "@fortawesome/free-regular-svg-icons";
+import { faHeartbeat } from "@fortawesome/free-solid-svg-icons";
 
 let menu = [
   { to: "/", title: "Home" },
@@ -41,7 +42,7 @@ const Header = () => {
           <div className="po ms-4">
             {" "}
             <a href="">
-              <FontAwesomeIcon className="me-4" icon={faHeart} />
+              <FontAwesomeIcon className="me-4 heart" icon={faHeart} />
             </a>
             <a className="fw-bold" href="/Мода">
               {" "}

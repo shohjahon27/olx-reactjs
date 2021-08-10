@@ -10,6 +10,9 @@
 .dark a {
   color: rgb(236, 234, 255) !important;
 }
+.heart:hover{
+color: red;
+}
 .logo{
   width:100px !important;
   /* box-shadow: 0 0 10px rgb(219, 216, 216); */
